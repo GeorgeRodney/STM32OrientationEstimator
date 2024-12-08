@@ -1,6 +1,7 @@
 #include "cppEnter.hpp"
 #include "stm32f4xx_hal.h"
 #include "main.h"
+#include "Imu.hpp"
  
 // Main Cpp event loop to run application
 void EventLoopCpp()

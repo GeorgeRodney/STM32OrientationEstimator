@@ -56,7 +56,8 @@ Core/Src/system_stm32f4xx.c \
 Core/Src/sysmem.c \
 Core/Src/syscalls.c
 
-CPP_SOURCES = Core/Src/cppEnter.cpp
+CPP_SOURCES = Core/Src/cppEnter.cpp \
+Core/Src/Imu.cpp
 
 # ASM sources
 ASM_SOURCES =  \
