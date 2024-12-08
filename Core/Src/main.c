@@ -17,13 +17,11 @@
   */
 
 #include "main.h"
+#include "cppEnter.hpp"
 
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
-
-#define OFF 1
-#define ON 0
 
 /**
   * @brief  The application entry point.
@@ -35,13 +33,7 @@ int main(void)
   SystemClock_Config();
   MX_GPIO_Init();
 
-  while (1)
-  {
-    HAL_GPIO_WritePin(USER_LED_GPIO_Port, USER_LED_Pin, ON);
-    HAL_Delay(2000);
-    HAL_GPIO_WritePin(USER_LED_GPIO_Port, USER_LED_Pin, OFF);
-    HAL_Delay(1000);
-  }
+  EventLoopC();
 
 }
 
